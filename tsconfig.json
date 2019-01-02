@@ -1,11 +1,13 @@
 {
     "compilerOptions": {
+      "experimentalDecorators": true,
         "module": "commonjs",
         "esModuleInterop": true,
         "target": "es6",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "moduleResolution": "node",
         "sourceMap": true,
+        "lib": ["esnext", "dom"],
         "outDir": "dist",
         "baseUrl": ".",
         "paths": {
