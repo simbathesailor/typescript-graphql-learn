@@ -32,7 +32,8 @@ class GithubFetchHelper extends RESTDataSource {
           stargazers_count,
           created_at
         } = result;
-        const { avatar_url = "", url = "" } = owner || {};
+        const { avatar_url = "", url = "", followers_url = "" } = owner || {};
+        console.log("owner", owner);
         return {
           id,
           avatar_url,
@@ -40,7 +41,8 @@ class GithubFetchHelper extends RESTDataSource {
           description,
           open_issues_count,
           stargazers_count,
-          created_at
+          created_at,
+          followers_url
         };
       });
       return parsedResult;

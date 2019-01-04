@@ -19,6 +19,7 @@ const QueryGithub = gql`
     open_issues_count: Int
     stargazers_count: Int
     created_at: String
+    followers_url: String
   }
 
   extend type Query {
