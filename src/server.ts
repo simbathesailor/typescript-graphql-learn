@@ -62,3 +62,16 @@ server.listen().then(({ url }) => {
 export default server;
 
 // https://api.github.com/search/repositories?q=all&sort=forks&order=desc&page=1
+
+// query {
+//   getGithubList(input: {
+//     order: ASC,
+//     pageNo: 1,
+//     sort: "forks",
+//     queryString: "all"
+//   }) {
+//     avatar_url
+//     url
+//     followers_url
+//   }
+// }
